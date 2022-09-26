@@ -22,6 +22,11 @@ h1 {
 .row {
     display: flex;
 }
+
+.iconbig {
+    font-size: 40px;
+
+}
 /*---------------
     BUTTONS
 ---------------*/
@@ -42,24 +47,22 @@ header {
     right: 0;
     z-index: 100;
     width: 100%;
+
 }
 
-.center {
-    width: 40%;
-}
 .headernav {
     display: flex;
     padding: 10px 15px;
+    height: 80px;
 }
 
 .headerleft {
-    width: 30%;
+    width: 50%;
 }
 
 .headerright {
-    width: 30%;
+    width: 50%;
     justify-content: flex-end; 
-    display: flex;  
 }
 
 .main-nav-left ul {
@@ -73,6 +76,8 @@ header {
 
 .main-nav-left ul li a, .main-nav-right ul li a {
     text-decoration: none;
+    margin: 0 20px;
+    color: black;
 }
 
 .main-nav-right ul {
@@ -82,7 +87,29 @@ header {
 /*---------------
     MAIN
 ---------------*/
+.container-big {
+    width: 1180px;
+    margin: auto;
+}
+.col-left {
+    width: 30%;
+}
+.col-right {
+    width: 50%;
+}
+.hero {
+    background-color: #b4d0e7;
+    height: 500px;
+}
 
+.herotitle {
+    text-align: center;
+    font-size: 60px;
+    width: 1180px;
+}
+.image {
+    width: 100%;
+}
 /*---------------
     FOOTER
 ---------------*/
