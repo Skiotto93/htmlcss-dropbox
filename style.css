@@ -139,8 +139,9 @@ header {
 .col {
     border: 1px groove lightgrey;
     margin-right: 10px;
-    width: calc(100% / 3 - 20px);
+    width: calc(100% / 3 - 30px);
     margin-top: 50px;
+    flex-wrap: nowrap;
 }
 .col-top {
 
@@ -155,10 +156,14 @@ header {
 .whitebutton {
     color: black;
     background-color: white;
-    border: 3px black;
+    border: 1px groove black;
+    padding: 10px;
 }
 .info {
     padding: 30px;
+}
+.info .bluebutton {
+    width: 100%;
 }
 .description {
     padding-left: 30px;
