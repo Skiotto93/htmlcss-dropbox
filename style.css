@@ -12,15 +12,73 @@
     TYPO
 ---------------*/
 font-family: 'Roboto', sans-serif;
+h1 {
+    font-size: 40px;
+}
 
 /*---------------
     COMMON
 ---------------*/
+.row {
+    display: flex;
+}
+/*---------------
+    BUTTONS
+---------------*/
+.bluebutton {
+    padding: 10px;
+    background-color: #0061ff;
+    color: #fff;
+    border: none;
+}
 
 /*---------------
     HEADER
 ---------------*/
+header {
+    /*aggiungere position: fixed;*/
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+}
 
+.center {
+    width: 40%;
+}
+.headernav {
+    display: flex;
+    padding: 10px 15px;
+}
+
+.headerleft {
+    width: 30%;
+}
+
+.headerright {
+    width: 30%;
+    justify-content: flex-end; 
+    display: flex;  
+}
+
+.main-nav-left ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav-left, .main-nav-right {
+    justify-content: space-between;
+}
+
+.main-nav-left ul li a, .main-nav-right ul li a {
+    text-decoration: none;
+}
+
+.main-nav-right ul {
+    list-style: none;
+    display: flex;
+}
 /*---------------
     MAIN
 ---------------*/
