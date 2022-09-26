@@ -88,24 +88,28 @@ header {
     MAIN
 ---------------*/
 .container-big {
-    width: 1180px;
+    width: 1160px;
     margin: auto;
 }
 .col-left {
     width: 30%;
+    margin-top: 30px;
 }
 .col-right {
     width: 50%;
+    margin-top: 30px;
+}
+.col-left .bluebutton, .col-left .iconbig {
+    margin: 20px 0;
 }
 .hero {
     background-color: #b4d0e7;
-    height: 500px;
+    height: 550px;
 }
 
 .herotitle {
-    text-align: center;
     font-size: 60px;
-    width: 1180px;
+    width: 1160px;
 }
 .image {
     width: 100%;
