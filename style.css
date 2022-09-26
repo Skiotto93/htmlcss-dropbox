@@ -93,26 +93,26 @@ header {
 }
 .col-left {
     width: 30%;
-    margin-top: 30px;
 }
 .col-right {
     width: 50%;
-    margin-top: 30px;
 }
 .col-left .bluebutton, .col-left .iconbig {
-    margin: 20px 0;
+    margin: 35px 0;
 }
 .hero {
     background-color: #b4d0e7;
-    height: 550px;
+    height: 730px;           /*per far strabordare l'iimagine diamo
+                               un'altezza fissa*/
 }
 
 .herotitle {
     font-size: 60px;
     width: 1160px;
+    padding: 100px 0;
 }
 .image {
-    width: 100%;
+    width: 120%;
 }
 /*---------------
     FOOTER
