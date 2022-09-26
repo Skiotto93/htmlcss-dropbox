@@ -17,6 +17,9 @@ h1 {
     font-size: 80px;
 }
 
+.text-col {
+    text-align: center;
+}
 /*---------------
     COMMON
 ---------------*/
@@ -93,27 +96,27 @@ header {
     margin: auto;
 }
 .col-left {
-    width: 30%;
+    width: 40%;
 }
 .col-right {
-    width: 50%;
+    width: 60%;
 }
 .col-left .bluebutton, .col-left .iconbig {
-    margin: 35px 0;
+    margin: 25px 0;
 }
 .hero {
     background-color: #b4d0e7;
-    height: 760px;           /*per far strabordare l'iimagine diamo
+    height: 730px;           /*per far strabordare l'iimagine diamo
                                un'altezza fissa*/
 }
 
 .herotitle {
-    font-size: 80px;
+    font-size: 70px;
     width: 1160px;
     padding: 100px 0;
 }
 .image {
-    width: 125%;
+    width: 100%;
 }
 .container-small {
     width: 1000px;
@@ -134,14 +137,51 @@ header {
 }
 
 .col {
-    border: 5px grey;
+    border: 1px groove lightgrey;
     margin-right: 10px;
     width: calc(100% / 3 - 20px);
     margin-top: 50px;
 }
 .col-top {
-    text-align: center;
+
     padding: 10px 0;
+    border-bottom: 1px groove lightgrey;
+}
+
+.normimage {
+    width: 90%;
+}
+
+.whitebutton {
+    color: black;
+    background-color: white;
+    border: 3px black;
+}
+.info {
+    padding: 30px;
+}
+.description {
+    padding-left: 30px;
+}
+
+.description h3 {
+    padding-top: 60px;
+}
+
+.description p {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.colsmall {
+    width: calc(100% / 3);
+    flex-wrap: wrap;
+    background-color: brown;
+    height: 100px;
+    border: 3px solid black;
+}
+
+.rulecol {
+    width: 25%;
 }
 /*---------------
     FOOTER
