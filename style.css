@@ -245,3 +245,29 @@ header {
 /*---------------
     FOOTER
 ---------------*/
+footer {
+    background-color: black;
+}
+
+.main-nav-footer ul {
+    width: calc(100% / 5)
+}
+.main-nav-footer ul li {
+    list-style-type: none;
+    color: white;
+}
+.main-nav-footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+.footer-bottom {
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.footer-bottom span {
+    padding: 0 10px;
+}
+.main-nav-footer .rulecol {
+    padding-top: 40px;
+}
