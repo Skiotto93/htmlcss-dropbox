@@ -46,9 +46,7 @@ h1 {
 ---------------*/
 header {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    
     z-index: 100;
     width: 100%;
 
@@ -59,9 +57,7 @@ header {
     align-items: center;
     max-height: 80px;
     padding: 10px 15px;
-    top: 0;
-    left: 0;
-    right: 0;
+    
     background-color: white;
 }
 
@@ -74,9 +70,10 @@ header {
     justify-content: flex-end; 
 }
 
-.main-nav-left ul {
+.main-nav-left ul, .main-nav-right ul {
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
 .main-nav-left ul li a, .main-nav-right ul li a {
@@ -85,10 +82,6 @@ header {
     color: black;
 }
 
-.main-nav-right ul {
-    list-style: none;
-    display: flex;
-}
 /*---------------
     MAIN
 ---------------*/
@@ -102,7 +95,7 @@ header {
 .col-right {
     width: 60%;
 }
-.bluebutton {
+.col-left .bluebutton {
     margin: 25px 0;
 }
 .hero {
