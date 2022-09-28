@@ -100,19 +100,28 @@ header {
 .col-right {
     width: 60%;
 }
-.col-left .bluebutton, .col-left .iconbig {
+.col-left .bluebutton, .col-left {
     margin: 25px 0;
 }
 .hero {
-    background-color: #b4d0e7;
-    height: 730px;           /*per far strabordare l'iimagine diamo
+    background-color: #b4d0e7;        /*per far strabordare l'iimagine diamo
                                un'altezza fissa*/
+}
+
+.relative {
+    position: relative;
+    bottom: -80px;
+}
+.iconbig {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
 }
 
 .herotitle {
     font-size: 70px;
     width: 1160px;
-    padding: 100px 0;
+    padding-top: 100px;
 }
 .image {
     width: 100%;
@@ -165,6 +174,10 @@ header {
     background-color: white;
     border: 1px groove black;
     padding: 10px;
+}
+
+#IIIsezione {
+    margin-top: 75px;
 }
 .info {
     padding: 30px;
