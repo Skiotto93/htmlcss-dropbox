@@ -91,7 +91,7 @@ header {
     MAIN
 ---------------*/
 .container-big {
-    width: 1160px;
+    max-width: 1160px;
     margin: auto;
 }
 .col-left {
@@ -100,12 +100,11 @@ header {
 .col-right {
     width: 60%;
 }
-.col-left .bluebutton, .col-left {
+.bluebutton {
     margin: 25px 0;
 }
 .hero {
-    background-color: #b4d0e7;        /*per far strabordare l'iimagine diamo
-                               un'altezza fissa*/
+    background-color: #b4d0e7;
 }
 
 .relative {
@@ -120,14 +119,14 @@ header {
 
 .herotitle {
     font-size: 70px;
-    width: 1160px;
+    max-width: 1160px;
     padding-top: 100px;
 }
 .image {
     width: 100%;
 }
 .container-small {
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -165,8 +164,11 @@ header {
     border: 1px groove lightgrey;
 }
 
+#IIsezione {
+    margin-top: 150px;
+}
 .normimage {
-    width: 90%;
+    width: 100%;
 }
 
 .whitebutton {
@@ -179,6 +181,10 @@ header {
 #IIIsezione {
     margin-top: 75px;
 }
+.thirdtitle {
+    font-size: 25px;
+    margin-bottom: 60px;
+}
 .info {
     padding: 30px;
 }
@@ -189,7 +195,7 @@ header {
     justify-content: space-between;
 }
 .description {
-    padding-left: 30px;
+    padding-left: 45px;
 }
 
 .description h3 {
@@ -197,8 +203,8 @@ header {
 }
 
 .description p {
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 .colsmall {
     width: 30%;
@@ -216,21 +222,47 @@ header {
     width: 25%;
 }
 
+
+#IVsezione {
+    margin-top: 200px;
+}
+.marginint {
+    margin-top: 70px;
+}
+
+.marginint a {
+    color: blue;
+}
+#Vsezione {
+    margin-top: 150px;
+}
+
 .partner-col {
     width: 30vw;
     height: 30vw;
     flex-wrap: wrap;
 }
- .partner-colcenter {
+.partner-colcenter {
     width: calc(100% - 60vw);
     overflow-y: auto;
     background-color: #f5f5f5; 
+    padding: 50px;
  }
-
+ .partner-colcenter p {
+    padding: 60px 0; 
+ }
  .partner {
     width: 50%;
     height: 50%;
     background-color: #a2d39b; 
+ }
+ .image50 {
+    width: 50%;
+    filter: invert(1);
+ }
+ .imagecentral {
+    width: 50%;
+
  }
 
  .color1 {
@@ -264,6 +296,18 @@ header {
  }
  .col-right h3 {
     color: #61082b;
+    font-size: 35px;
+ }
+
+ .alignbase {
+    align-items: baseline;
+ }
+ .join .col-left {
+    display: flex;
+    justify-content: center;
+ }
+ #faq {
+    padding: 160px 0;
  }
  
 /*---------------
@@ -272,7 +316,10 @@ header {
 footer {
     background-color: black;
 }
-
+.main-nav-footer {
+    justify-content: space-between;
+    padding-top: 80px;
+}
 .main-nav-footer ul {
     width: calc(100% / 5);
 }
@@ -283,7 +330,11 @@ footer {
 .main-nav-footer ul li a {
     color: white;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
+}
+.main-nav-footer ul li h4 {
+    font-size: 20px;
+    padding-bottom: 30px;
 }
 .footer-bottom {
     color: white;
