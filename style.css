@@ -20,6 +20,12 @@ h1 {
 .text-col {
     text-align: center;
 }
+.iconbig {
+    font-size: 40px;
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+}
 /*---------------
     COMMON
 ---------------*/
@@ -27,9 +33,25 @@ h1 {
     display: flex;
 }
 
-.iconbig {
-    font-size: 40px;
-
+.container-big {
+    max-width: 1160px;
+    margin: auto;
+}
+.container-small {
+    max-width: 1000px;
+    margin: auto;
+}
+.col-left {
+    width: 40%;
+}
+.col-right {
+    width: 60%;
+}
+.col-left .bluebutton {
+    margin: 25px 0;
+}
+.image {
+    width: 100%;
 }
 /*---------------
     BUTTONS
@@ -40,24 +62,26 @@ h1 {
     color: #fff;
     border: none;
 }
+.whitebutton {
+    color: black;
+    background-color: white;
+    border: 1px groove black;
+    padding: 10px;
+}
 
 /*---------------
     HEADER
 ---------------*/
 header {
-    position: fixed;
-    
+    position: fixed;    
     z-index: 100;
     width: 100%;
-
 }
-
 .headernav {
     display: flex;
     align-items: center;
     max-height: 80px;
-    padding: 10px 15px;
-    
+    padding: 10px 15px;    
     background-color: white;
 }
 
@@ -85,19 +109,7 @@ header {
 /*---------------
     MAIN
 ---------------*/
-.container-big {
-    max-width: 1160px;
-    margin: auto;
-}
-.col-left {
-    width: 40%;
-}
-.col-right {
-    width: 60%;
-}
-.col-left .bluebutton {
-    margin: 25px 0;
-}
+  /*hero*/
 .hero {
     background-color: #b4d0e7;
     padding-top: 80px;
@@ -105,12 +117,7 @@ header {
 
 .relative {
     position: relative;
-    bottom: -80px;
-}
-.iconbig {
-    position: absolute;
-    bottom: 80px;
-    left: 0;
+    bottom: -70px;
 }
 
 .herotitle {
@@ -118,17 +125,36 @@ header {
     max-width: 1160px;
     padding-top: 100px;
 }
-.image {
-    width: 100%;
-}
-.container-small {
-    max-width: 1000px;
-    margin: auto;
-}
-
+  /*Listino prezzi*/
 .titlesecond {
     margin-top: 150px;
     font-size: 25px;
+}
+.checkbox {
+    margin-top: 60px;
+}
+#check {
+    margin-left: 50px;
+}
+.col {
+    border: 1px groove lightgrey;
+    width: calc(100% / 3);
+    margin-top: 50px;
+    flex-wrap: nowrap;
+}
+.col-top {
+    padding: 10px 0;
+    border-bottom: 1px groove lightgrey;
+}
+.info {
+    padding: 30px;
+}
+.info .bluebutton {
+    width: 100%;
+}
+.info .row {
+    justify-content: space-between;
+    align-items: center;
 }
 .price {
     padding: 25px 0 20px 0;
@@ -145,6 +171,9 @@ header {
 .buynow {
     padding-bottom: 40px;
 }
+.buynow a {
+    color: blue;
+}
 .rulecol {
     width: 25%;
     margin-bottom: 50px;
@@ -158,25 +187,9 @@ header {
 .paddingcheck div {
     padding-bottom: 25px;
 }
-
-.checkbox {
-    margin-top: 60px;
-}
-
-#check {
-    margin-left: 50px;
-}
-
-.col {
-    border: 1px groove lightgrey;
-    width: calc(100% / 3);
-    margin-top: 50px;
-    flex-wrap: nowrap;
-}
-.col-top {
-
-    padding: 10px 0;
-    border-bottom: 1px groove lightgrey;
+  /*Partner*/
+#IIsezione {
+      margin-top: 150px;
 }
 .colcenter {
     margin-left: 25px;
@@ -187,42 +200,9 @@ header {
     margin-top: 50px;
     border: 1px groove lightgrey;
 }
-
-#IIsezione {
-    margin-top: 150px;
-}
-.normimage {
-    width: 100%;
-}
-
-.whitebutton {
-    color: black;
-    background-color: white;
-    border: 1px groove black;
-    padding: 10px;
-}
-
-#IIIsezione {
-    margin-top: 160px;
-}
-.thirdtitle {
-    font-size: 25px;
-    margin-bottom: 60px;
-}
-.info {
-    padding: 30px;
-}
-.info .bluebutton {
-    width: 100%;
-}
-.info .row {
-    justify-content: space-between;
-    align-items: center;
-}
 .description {
     padding-left: 45px;
 }
-
 .description h3 {
     padding-top: 60px;
 }
@@ -231,35 +211,40 @@ header {
     padding-top: 20px;
     padding-bottom: 30px;
 }
+  /*Vantaggi abbonamento*/
+#IIIsezione {
+    margin-top: 160px;
+}
+.thirdtitle {
+    font-size: 25px;
+    margin-bottom: 60px;
+}
 .colsmall {
     width: 30%;
 }
 .colsmall h3 {
     padding: 20px 0;
 }
-
 .flexwrap {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px 0;
 }
-
-
-
+  /*Team che utilizzano DB*/
 #IVsezione {
     margin-top: 200px;
-}
-.marginint {
-    margin-top: 70px;
 }
 
 .marginint a {
     color: blue;
 }
+.marginint {
+    margin-top: 70px;
+}
+  /*Partnership*/
 #Vsezione {
     margin-top: 150px;
 }
-
 .partner-col {
     width: calc(100vw / 3);
     height: calc(100vw / 3);
@@ -269,87 +254,85 @@ header {
     overflow-y: auto;
     background-color: #f5f5f5; 
     padding: 50px;
- }
- .partner-colcenter p {
+}
+.partner-colcenter p {
     padding: 60px 0; 
- }
- .partner {
+}
+.partner {
     width: 50%;
     height: 50%;
     background-color: #a2d39b;
     display: flex;
     justify-content: center;
     align-items: center;
- }
- .image50 {
+}
+.image50 {
     width: 50%;
-
     filter: invert(1);
- }
- .imagecentral {
+}
+.imagecentral {
     width: 50%;
-
- }
-
- .color1 {
+}
+.color1 {
     background-color: #61082b;
- }
- .color2 {
+}
+.color2 {
     background-color: #0093ce;
- }
- .color3 {
+}
+.color3 {
     background-color: #ff1c1c;
- }
- .color4 {
+}
+.color4 {
     background-color: #d5001f;
- }
- .color5 {
+}
+.color5 {
     background-color: #b4d0e7;
- }
- .color6 {
+}
+.color6 {
     background-color: #0d2481;
- }
- .color7 {
+}
+.color7 {
     background-color: #ffd830;
- }
+}
 
- .join {
-    background-color: #b4d0e7;
-    padding: 130px 0;
- }
- .col-right h3 {
+  /*Join in Dropbox*/
+.join {
+      background-color: #b4d0e7;
+      padding: 130px 0;
+}
+.col-right h3 {
     color: #61082b;
     font-size: 35px;
- }
- .join .whitebutton {
+}
+.join .whitebutton {
     border: none;
- }
-
- .alignbase {
+}
+.alignbase {
     align-items: baseline;
- }
- .join .col-left {
+}
+.join .col-left {
     display: flex;
     justify-content: center;
- }
- #faq {
+}
+  /*FAQ*/
+#faq {
     padding: 160px 0;
- }
- .flexend {
+}
+.flexend {
     justify-content: flex-end;
     display: flex;
     padding-right: 40px;
- }
- .faqspace {
+}
+.faqspace {
     padding: 35px 0;
     border-top: 1px solid lightgray;
- }
- .faqborderbottom {
+}
+.faqborderbottom {
     border-bottom: 1px solid lightgray;
- }
- .titlefaqspace {
+}
+.titlefaqspace {
     padding-bottom: 70px;
- }
+}
 /*---------------
     FOOTER
 ---------------*/
