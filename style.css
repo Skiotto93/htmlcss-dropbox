@@ -360,9 +360,6 @@ footer {
     justify-content: space-between;
     padding-top: 80px;
 }
-.main-nav-footer ul {
-    width: calc(100% / 5);
-}
 .main-nav-footer ul li {
     list-style-type: none;
     color: white;
